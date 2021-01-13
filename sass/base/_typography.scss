@@ -43,7 +43,21 @@ body {
   transition: all 0.2s;
 
   &:hover {
-    transform: skewX(10deg) skewY(2deg) scale(1.1);
-    text-shadow: 0.5rem 0.5rem 2rem rgba($black, 0.2);
+    transform: skewX(2deg) skewY(1deg);
+    text-shadow: 2px 5px 1rem rgba($black, 0.2);
+  }
+}
+
+.heading-tertiary {
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 1.4rem;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
   }
 }

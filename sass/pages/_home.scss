@@ -6,3 +6,21 @@
   h2 {
   }
 }
+
+.section-features {
+  padding: 20rem 0;
+  margin-top: -10rem;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($light-green, 0.75),
+      rgba($dark-green, 0.75)
+    ),
+    url("../../img/nat-4.jpg");
+  background-size: cover;
+  background-position: top;
+  transform: skewY(-7deg);
+
+  & > * {
+    transform: skewY(7deg);
+  }
+}
