@@ -1,3 +1,11 @@
+/*
+$breakpoint argument choices
+
+phone 
+tablet-portrait
+tablet-landscape
+big-desktop
+*/
 @keyframes lToR {
   0% {
     opacity: 0;
@@ -59,6 +67,26 @@
 
 html {
   font-size: 62.5%;
+}
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 37.5em) {
+  html {
+    font-size: 40%;
+  }
 }
 
 body {
