@@ -188,4 +188,82 @@
     font-size: 8rem;
     font-weight: 100;
   }
+
+  @include respond(tablet-portrait) {
+    height: auto;
+    border-radius: 0.5rem;
+    background-color: $white;
+    box-shadow: 0 1.5rem 4rem rgba($black, 0.3);
+    width: 80%;
+    margin: auto;
+
+    &__side {
+      height: auto;
+      position: relative;
+      box-shadow: none;
+
+      &--back {
+        transform: rotateY(0deg);
+        clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 100%);
+
+        &--1 {
+          background-image: linear-gradient(
+            to right bottom,
+            $light-orange,
+            $dark-orange
+          );
+        }
+
+        &--2 {
+          background-image: linear-gradient(
+            to right bottom,
+            $light-green,
+            $dark-green
+          );
+        }
+
+        &--3 {
+          background-image: linear-gradient(
+            to right bottom,
+            $light-blue,
+            $dark-blue
+          );
+        }
+      }
+    }
+
+    &__details {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    &:hover &__side--front {
+      transform: rotateY(0deg);
+    }
+
+    // Content
+    // Back of Card
+
+    &__cta {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      transform: translate(0);
+      padding: 7rem 4rem 4rem 4rem;
+    }
+
+    &__price-box {
+      margin-bottom: 4rem;
+    }
+
+    &__price-only {
+      font-size: 1.4rem;
+    }
+
+    &__price-value {
+      font-size: 8rem;
+      font-weight: 100;
+    }
+  }
 }

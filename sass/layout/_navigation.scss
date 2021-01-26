@@ -14,6 +14,16 @@
     box-shadow: 0 1rem 3rem rgba($black, 0.3);
     text-align: center;
     cursor: pointer;
+
+    @include respond(tablet-portrait) {
+      top: 4.5rem;
+      right: 4.5rem;
+    }
+
+    @include respond(phone) {
+      top: 3rem;
+      right: 3rem;
+    }
   }
 
   &__background {
@@ -27,6 +37,10 @@
     z-index: 1000;
     transition: all 0.6s;
 
+    @include respond(tablet-portrait) {
+      top: 3.5rem;
+      right: 3.5rem;
+    }
     // transform: scale(100);
   }
   &__nav {

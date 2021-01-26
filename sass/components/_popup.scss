@@ -53,6 +53,11 @@
     width: 33.33333333333%;
     display: table-cell;
     vertical-align: middle;
+
+    @include respond(tablet-portrait) {
+      width: 100%;
+      display: block;
+    }
   }
 
   &__right {
@@ -60,11 +65,21 @@
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
+
+    @include respond(tablet-portrait) {
+      width: 100%;
+      display: block;
+    }
   }
 
   &__img {
     width: 100%;
     display: block;
+
+    @include respond(tablet-portrait) {
+      width: 49.8%;
+      display: inline-block;
+    }
   }
 
   &__text {
